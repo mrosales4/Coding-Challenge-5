@@ -23,7 +23,7 @@ class Manager extends Employee {
   calculateAnnualSalary() {
     const bonus = this.salary * 0.15; 
     const annualSalary = super.calculateAnnualSalary() + bonus;
-    console.log(`Department: ${this.department}`);
+    console.log(`${this.name} ( ${this.department} )`);
     console.log(`Bonus: $${bonus.toFixed(2)}`);
     console.log(`Total Annual Salary (including bonus): $${annualSalary.toFixed(2)}`);
     return annualSalary;
